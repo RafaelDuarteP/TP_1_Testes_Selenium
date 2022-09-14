@@ -16,7 +16,9 @@ public class GoogleTest {
 
 	@Before
 	public void setUp() {
-		System.setProperty("webdriver.chrome.driver", "src/test/java/driver/chromedriver.exe");
+		// Mudar a versão do webdriver de acordo com a versão do chrome
+		// para consultar a versão do chrome é so acessar chrome://version
+		System.setProperty("webdriver.chrome.driver", "src/test/java/driver/chromedriver-ver105.exe");
 		nav = new ChromeDriver();
 	}
 
